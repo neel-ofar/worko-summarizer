@@ -2,8 +2,12 @@ from flask import Flask, render_template, request, jsonify
 import requests
 
 app = Flask(__name__)
+from dotenv import load_dotenv
+import os
 
-HF_API_TOKEN = "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"
+load_dotenv()
+
+HF_API_TOKEN = os.getenv("HF_API_TOKEN")
 API_URL = "https://router.huggingface.co/hf-inference/models/facebook/bart-large-cnn"
 
 def summarize_text(text, style):
@@ -67,3 +71,4 @@ def summarize():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
