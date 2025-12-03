@@ -2,6 +2,7 @@
 
 A simple web-based document summarization tool powered by a large language model (LLM). Users can paste text or upload `.txt` files and receive summaries in different styles: brief, detailed, or bullet points.
 
+YOU CAN CHECK IT OUT HERE : https://worko-summarizer.onrender.com
 ---
 
 ## Features
@@ -111,3 +112,4 @@ Navigate to http://127.0.0.1:5000/ in your browser
 15.Summarize text in languages other than English by detecting language and using appropriate models.
 
 16.we can Allow users to select exact word/character count for summaries
+
